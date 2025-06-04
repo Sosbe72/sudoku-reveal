@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudoku Reveal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sudoku Reveal Game</h1>
+  <div id="difficulty-select">
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+  <div id="sudoku-container"></div>
+  <div id="image-reveal">
+    <img id="puzzle-image" src="" alt="Revealed Image" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
