@@ -1,0 +1,74 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#sudoku-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  max-width: 90vw;
+  margin: auto;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cell.fixed {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.cell.selected {
+  background-color: #d0ebff;
+}
+
+.cell.box-top {
+  border-top: 3px solid black;
+}
+.cell.box-left {
+  border-left: 3px solid black;
+}
+.cell.box-right {
+  border-right: 3px solid black;
+}
+.cell.box-bottom {
+  border-bottom: 3px solid black;
+}
+
+#number-picker {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.num-button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#image-reveal img {
+  display: none;
+  margin-top: 20px;
+  max-width: 90vw;
+}
