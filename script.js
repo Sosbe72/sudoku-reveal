@@ -1,4 +1,3 @@
-
 const puzzle = [
   "5", "3", "", "", "7", "", "", "", "",
   "6", "", "", "1", "9", "5", "", "", "",
@@ -91,3 +90,7 @@ function checkComplete() {
 
 renderBoard();
 renderPicker();
+
+// Optional: randomize images if you want multiple
+const images = ["img/Image1.JPG", "img/Image2.JPG", "img/Image3.JPG"];
+document.getElementById("puzzle-image").src = images[Math.floor(Math.random() * images.length)];
